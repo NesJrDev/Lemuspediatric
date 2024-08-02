@@ -1,0 +1,315 @@
+/* Inicio Style */
+* {
+    box-sizing: border-box;
+    --principal-color: #0C4860;
+    --principal-font-p: "Montserrat", Sans-serif;
+}
+body {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+/* End inicio Style */
+/* Menu style */
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    transition: 0.2s linear;
+    height: 125px;
+}
+#nav-bar {
+    width: auto;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#nav-bar a   {
+    text-decoration: none;
+}
+.li-elements {
+    margin: 0 20px 0 20px;
+    list-style: none;
+    font-family: var(--principal-font-p);
+    color:  white;
+    font-size: 15px;
+    font-weight: 500;   
+    letter-spacing: 0.065rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    text-decoration: none;
+}
+.li-elements::before {
+    content: '';
+    position: absolute;
+    transform: translateY(10px);
+    width: 0px; /* 110 */
+    height: 3px; /* 3 */
+    background-color: white;
+    transition: 0.2s linear;
+}
+.li-elements:hover::before {
+    width: 100%; /* 110 */
+    height: 3px; /* 3 */
+
+}
+#contactUs-buttom {
+    background: white;
+    padding: 15px;
+    color: var(--principal-color);
+    border-radius: 9px;
+    transition: 1s;
+    background-image: linear-gradient(var(--principal-color), var(--principal-color), var(--principal-color));
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: -160px;
+}
+#contactUs-buttom:hover {
+    background-image: linear-gradient(var(--principal-color), var(--principal-color), var(--principal-color));
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 0px;
+    border: 2px solid white;
+    color: white;
+    transition: 0.5s;
+}
+#contactUs-buttom::before {
+    content: '';
+    width: 0;
+    height: 0;
+}
+/* When scroll this get actived */
+
+.scroled-header {
+    background-color: white;
+    transition: 1s;
+    z-index: 1;
+}
+.scroled-header .li-elements{
+    margin: 0 20px 0 20px;
+    list-style: none;
+    font-family: var(--principal-font-p);
+    color: var(--principal-color);
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 0.065rem;
+}
+.scroled-header .li-elements::before {
+    content: '';
+    position: absolute;
+    transform: translateY(10px);
+    width: 0px; /* 110 */
+    height: 3px; /* 3 */
+    background-color: var(--principal-color);
+    transition: 0.2s linear;
+}
+.scroled-header .li-elements:hover::before {
+    width: 100%; /* 110 */
+    height: 3px; /* 3 */
+
+}
+.scroled-header #contactUs-buttom {
+    background: var(--principal-color);
+    padding: 15px;
+    color: white;
+    border-radius: 9px;
+    background-image: linear-gradient(#fff, #fff, #fff);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: -160px;
+    transition: 0.5s;
+}
+.scroled-header #contactUs-buttom:hover {
+    background-image: linear-gradient(#fff, #fff, #fff);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 0px;
+    border: 2px solid var(--principal-color);
+    color: var(--principal-color);
+    transition: 0.5s;
+}
+/* Second section */
+
+.firstImg {
+    width: 100%;
+    height: 93vh;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background-image: linear-gradient(#00000075, #00000075, #00000075), url(resources/slice-member01.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.firstText {
+    width: 450px;
+    margin-left: 470px;
+}
+.firstText h1 {
+    color: #ffffff;
+    font-family: "Vogue", Sans-serif;
+    font-size: 51px;
+    font-weight: 900;
+    line-height: 1.2em;
+
+}
+.firstText p {
+    color: #ffffff;
+    font-family: "Vogue", Sans-serif;
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 1.2em;
+}
+.firstText button {
+    font-family: "Montserrat", Sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0px;
+    fill: #ffffff;
+    color: #ffffff;
+    background-color: #0C4860;
+    border-style: solid;
+    border-width: 0px 0px 0px 0px;
+    border-radius: 0px 0px 0px 0px;
+    padding: 15px 40px 15px 40px;
+}
+/* Membership Benefits */
+#membershipBenefits {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background-image: linear-gradient(#0c4860a6, #0c4860a6, #0c4860a6), url(resources/back-members-min.jpg);
+    padding: 80px 0 80px 0;
+    background-repeat: repeat;
+    background-size: 100%;
+    background-position: 0px -230px;
+}
+#membershipBenefits span p{
+    color: #D4E7F0;
+    font-family: "Vogue", Sans-serif;
+    font-size: 45px;
+    font-weight: 600;
+    letter-spacing: 2.4px;
+    word-spacing: 0px;
+    margin: 6px 0 6px 0;
+}
+#membershipBenefits span {
+    margin-left: 39vh;
+}
+.marP {
+    padding: 0px 0 0 90px;
+}
+/* third section */
+.firstSlider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 944px;
+    height: 944px;
+    background: #D4E7F0;
+}
+.iconsDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.iconsDiv img{
+    width: 80px;
+    position: relative;
+}
+.imgInfo img {
+    width: 562px;
+    height: 775px;
+}
+.imagesinfo {
+    width: 738em;
+    display: flex;
+    transition: 0.4s;
+}
+.imgInfo {
+    width: 170vh;
+    display: flex;
+    align-items: center;
+    margin: 0px 50px 0px 15px;
+    transition: 0.4s;
+}
+.imgOverflow {
+    width: 110vh;
+    overflow: hidden;
+}
+.textContainerSlider h1 {
+    width: 548px;
+    font-family: "Vogue", Sans-serif;
+    font-size: 3rem;
+}
+.textContainerSlider p {
+    width: 59%;
+    font-family: "Montserrat", Sans-serif;
+    font-size: 1.063rem;
+}
+.textContainerSlider {
+    padding: 0 0 0 17px;
+}
+.iconsDivActive::before {
+    content: "";
+    position: absolute;
+    display: none;
+    width: 80px;
+    height: 80px;
+    background-color: #0c4860a6;
+    border-radius: 50%;
+    z-index: 1;
+    transition: 0.5s;
+}
+.iconsDivActive::before {
+    display: block;
+    transition: 0.5s;
+}
+/* Healh care section */
+
+.healtCare {
+    width: 100%;
+    height: 89vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(#0c4860b7, #0c4860b7, #0c4860b7), url(resources/fondo_03.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.healtCareCenter {
+    width: 123vh;
+    height: 64vh;
+    display: grid;
+    place-content: center;
+    background: #0c4860d9;
+}
+.healtCareCenter h1 {
+    width: 760px;
+    font-size: 3.3rem;
+    color: white;
+    font-family: "Vogue";
+    font-weight: 100;
+    line-height: 1.4;
+    letter-spacing: 1px;
+    margin: 0 0 0 0px;
+    text-align: center;
+}
+.healtCareCenter p {
+    font-size: 20px;
+    color: white;
+    font-family: var(--principal-font-p);
+    font-weight: 100;
+    line-height: inherit;
+    line-height: 2;
+    letter-spacing: 1px;
+    width: 740px;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: -8px;
+}
